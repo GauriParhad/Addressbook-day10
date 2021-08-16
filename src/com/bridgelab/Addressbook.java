@@ -1,5 +1,10 @@
 package com.bridgelab;
 import java.util.Scanner;
+import java.util.list;
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.io.Console;
+
 
 public class Addressbook {
 
@@ -26,6 +31,33 @@ public class Addressbook {
         System.out.println("Name of the person:" + ph_no);
         String Email_Id = sc.nextline();
         System.out.println("Name of the person:" + Email_Id);
+    }
+}
+    public static void contactNewperson()
+    {
+        Scanner sc=new Scanner(System.in);
+        Console c=System.console();
+        System.out.println("Enter the name");
+        String n=c.readLine();
+        System.out.println("Welcome" +n);
+        System.out.println("Enter your Address:");
+        String Address=c.readLine();
+        System.out.println("Your Address is :" +Address);
+        System.out.println("Enter your State:");
+        String State=c.readLine();
+        System.out.println("Your State is :" +State);
+        System.out.println("Enter your City:");
+        String City=c.readLine();
+        System.out.println("Your City is :" +City);
+        System.out.println("Enetr zip code");
+        String zip=c.readLine();
+        System.out.println("Enter your zip code:" +zip);
+        System.out.println("Enter your ph_no:");
+        String ph_no=c.readLine();
+        System.out.println("Your Contact number is :" +ph_no);
+        System.out.println("Enter your Email_Id:");
+        String Email_Id=c.readLine();
+        System.out.println("Your Email_id is :" +Email_Id);
     }
 }
 
