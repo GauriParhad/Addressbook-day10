@@ -13,6 +13,7 @@ public class Addressbook {
         contactNewperson();
         editContactDetails();
         multiplePersonDetails();
+        multipleDetailsAddressbook();
     }
 
     public static void details() {
@@ -86,17 +87,43 @@ public class Addressbook {
 
         langs.add("Gauri");
         langs.add("Pl no 97, Indraprastha nagar");
-                langs.add("Maharashtra");
-                langs.add("Nagpur");
-                langs.add("440022");
-                langs.add("9689710299");
-                langs.add("thegauriparhad@gmail.com");
+        langs.add("Maharashtra");
+        langs.add("Nagpur");
+        langs.add("440022");
+        langs.add("9689710299");
+        langs.add("thegauriparhad@gmail.com");
 
-                for (String lang:langs){
-
-                        System.out.println(+lang);
+        for (String lang:langs){
+            System.out.println(+lang);
                 }
                 System.out.println()
+    }
+
+
+    public static void multipleDetailsAddressbook(){
+    Hashtable<String,String> my_dictionary=new Hashtable<String,String>();
+
+    //Using a  few  dictionary class methods
+        my_dictionary.put("01", "Vilas  deshmukh");
+        my_dictionary.put("02", "Trimurty nagar");
+        my_dictionary.put("03", "Delhi");
+        my_dictionary.put("04", "Gurgaon");
+        my_dictionary.put("05", "456743");
+        my_dictionary.put("06", "74843573397");
+        my_dictionary.put("07", "ghjauegnsb@gmail.com");
+
+
+        System.out.println("\nValue at key=01:" +my_dictionary.get("01"));
+        System.out.println("\nValue at key=02:" +my_dictionary.get("02"));
+        System.out.println("\nValue at key=03:" +my_dictionary.get("03"));
+        System.out.println("\nValue at key=04:" +my_dictionary.get("04"));
+        System.out.println("\nValue at key=05:" +my_dictionary.get("05"));
+        System.out.println("\nValue at key=06:" +my_dictionary.get("06"));
+        System.out.println("\nValue at key=07:" +my_dictionary.get("07"));
+
+        System.out.println("\nSize of my_dictionary:" +my_dictionary.size());
+
+
     }
 }
 
