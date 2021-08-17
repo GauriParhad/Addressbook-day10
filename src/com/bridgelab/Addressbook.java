@@ -1,6 +1,7 @@
 package com.bridgelab;
+import java.io.LineNumberInputStream;
 import java.util.Scanner;
-import java.util.list;
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.io.Console;
@@ -11,6 +12,7 @@ public class Addressbook {
         details();
         contactNewperson();
         editContactDetails();
+        multiplePersonDetails();
     }
 
     public static void details() {
@@ -69,6 +71,7 @@ public class Addressbook {
     }
     public static void clearConsole(){
         final String name_person =System.getProperty("name_person.name");
+        
         if (name_person.contains("things")){
             Runtime.getRuntime().exec("cls");
         }
@@ -76,6 +79,24 @@ public class Addressbook {
         catch (final Exception e)
     {
         e.printStackTrace();
+    }
+
+    public static void multiplePersonDetails(){
+        List<String>langs=new  ArrayList<>();
+
+        langs.add("Gauri");
+        langs.add("Pl no 97, Indraprastha nagar");
+                langs.add("Maharashtra");
+                langs.add("Nagpur");
+                langs.add("440022");
+                langs.add("9689710299");
+                langs.add("thegauriparhad@gmail.com");
+
+                for (String lang:langs){
+
+                        System.out.println(+lang);
+                }
+                System.out.println()
     }
 }
 
