@@ -10,7 +10,7 @@ public class Addressbook {
     public static void main(String[] args) {
         details();
         contactNewperson();
-        //editContactDetails();
+        editContactDetails();
     }
 
     public static void details() {
@@ -38,7 +38,6 @@ public class Addressbook {
         String Email_Id = sc.nextline();
         System.out.println("Name of the person:" + Email_Id);
     }
-}
     public static void contactNewperson() {
         Scanner sc = new Scanner(System.in);
         Console c = System.console();
@@ -63,7 +62,8 @@ public class Addressbook {
         System.out.println("Enter your Email_Id:");
         String Email_Id = c.readLine();
         System.out.println("Your Email_id is :" + Email_Id);
-
+    }
+    public static void editContactDetails(){
         System.out.println("After Editing the existed contact the list of details are given below");
         contactNewperson();
     }
