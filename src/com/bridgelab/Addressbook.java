@@ -67,6 +67,16 @@ public class Addressbook {
         System.out.println("After Editing the existed contact the list of details are given below");
         contactNewperson();
     }
+    public static void clearConsole(){
+        final String name_person =System.getProperty("name_person.name");
+        if (name_person.contains("things")){
+            Runtime.getRuntime().exec("cls");
+        }
+    }
+        catch (final Exception e)
+    {
+        e.printStackTrace();
+    }
 }
 
 
